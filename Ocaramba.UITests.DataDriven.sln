@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocaramba.UITests.DataDriven", "Ocaramba.UITests.DataDriven.csproj", "{FDE2F7CA-DE4D-4DB4-B65E-9021F00B4C9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDE2F7CA-DE4D-4DB4-B65E-9021F00B4C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE2F7CA-DE4D-4DB4-B65E-9021F00B4C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE2F7CA-DE4D-4DB4-B65E-9021F00B4C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE2F7CA-DE4D-4DB4-B65E-9021F00B4C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AE4C265-0BFF-473C-AFB6-C17AB8DA8523}
+	EndGlobalSection
+EndGlobal
