@@ -37,20 +37,29 @@ namespace Ocaramba.UITests.PageObjects
             Logger.Info(CultureInfo.CurrentCulture, "Message text: {0}", messageSecureText);
             return messageSecureText;
         }
+
         public void EnterPassword(string password)
         {
             Logger.Info(CultureInfo.CurrentCulture, "Password '{0}'", password);
             this.Driver.GetElement(this.passwordLoc.Format("password"), BaseConfiguration.ShortTimeout).SendKeys(password);
         }
+
         public void EnterUserName(string userName)
         {
             Logger.Info(CultureInfo.CurrentCulture, "User name '{0}'", userName);
             this.Driver.GetElement(this.userNameLoc.Format("username"), BaseConfiguration.ShortTimeout).SendKeys(userName);
         }
+
         public void LogIn()
         {
             Logger.Info(CultureInfo.CurrentCulture, "Click on Login Button");
             this.Driver.GetElement(this.loginButtonLoc).Click();
+        }
+
+        public bool PageTitle()
+        {
+            var pageTitle = this.Driver.IsPageTitle("The Internet", 5);
+            return pageTitle;
         }
     }
 }

@@ -26,7 +26,8 @@ namespace Ocaramba.UITests1.Tests
             formFormAuthentication.LogIn();
             Verify.That(
                 this.DriverContext,
-                () => Assert.AreEqual(parameters["message"], formFormAuthentication.GetMessageSecure()));
+                () => Assert.True(formFormAuthentication.PageTitle()), // tytul
+                () => Assert.AreEqual(parameters["message"], formFormAuthentication.GetMessageSecure())); // message
         }
 
         [Test]
@@ -42,7 +43,8 @@ namespace Ocaramba.UITests1.Tests
             formFormAuthentication.LogIn();
             Verify.That(
                 this.DriverContext,
-                () => Assert.AreEqual(parameters["message"], formFormAuthentication.GetMessageSecure()));
+                () => Assert.True(formFormAuthentication.PageTitle()), // tytul
+                () => Assert.AreEqual(parameters["message"], formFormAuthentication.GetMessageSecure())); // message
         }
 
         [Test]
@@ -58,7 +60,8 @@ namespace Ocaramba.UITests1.Tests
             formFormAuthentication.LogIn();
             Verify.That(
                 this.DriverContext,
-                () => Assert.AreEqual(parameters["message"], formFormAuthentication.GetMessageSecure()));
+                () => Assert.True(formFormAuthentication.PageTitle()), // tytul
+                () => Assert.AreEqual(parameters["message"], formFormAuthentication.GetMessageSecure())); // message
         }
     }
 }
