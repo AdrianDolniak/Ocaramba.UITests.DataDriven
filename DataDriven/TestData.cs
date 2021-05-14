@@ -26,7 +26,7 @@ using NUnit.Framework;
 using Ocaramba.UITests.DataDriven;
 using Ocaramba.UITests.DataDriven.DataDriven;
 
-namespace Ocaramba.UITests1.DataDriven
+namespace Ocaramba.UITests.DataDriven
 {
     /// <summary>
     /// DataDriven methods for NUnit test framework
@@ -63,6 +63,13 @@ namespace Ocaramba.UITests1.DataDriven
             var path = TestContext.CurrentContext.TestDirectory;
             path = string.Format(CultureInfo.CurrentCulture, "{0}{1}", path, @"\DataDriven\TestDataDrivenCsv.csv");
             return DataDrivenHelper.ReadDataDriveFileCsv(path, new[] { "user", "password" }, "credentialCsv");
+        }
+
+        public static IEnumerable CredentialsBasicAuthCSV()
+        {
+            var path = TestContext.CurrentContext.TestDirectory;
+            path = string.Format(CultureInfo.CurrentCulture, "{0}{1}", path, @"\DataDriven\TestDataDrivenBasicAuth.csv");
+            return DataDrivenHelper.ReadDataDriveFileCsv(path, new[] { "user", "password" }, "credentialBasicAuthCsv");
         }
     }
 }

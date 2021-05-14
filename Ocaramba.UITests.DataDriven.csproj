@@ -12,7 +12,7 @@
     <PackageReference Include="NPOI" Version="2.4.1" />
     <PackageReference Include="NUnit" Version="3.13.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
-    <PackageReference Include="OcarambaLite" Version="3.2.12" />
+    <PackageReference Include="Ocaramba" Version="3.2.12" />
     <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.29.0" />
     <PackageReference Include="Selenium.WebDriver.IEDriver" Version="3.150.1.2" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="89.0.4389.2300" />
@@ -20,9 +20,11 @@
 	<ItemGroup>
     <Compile Include="DataDriven\DataDrivenHelper.cs" />
     <Compile Include="DataDriven\TestData.cs" />
+    <Compile Include="PageObjects\BasicAuthPage.cs" />
     <Compile Include="PageObjects\FormAuthenticationPage.cs" />
     <Compile Include="PageObjects\InternetPage.cs" />
-    <Compile Include="Tests\HerokuappTestsNUnitDataDriven.cs" />
+    <Compile Include="Tests\HerokuappTestsNUnitDataDrivenBasicAuth.cs" />
+    <Compile Include="Tests\HerokuappTestsNUnitDataDrivenFormAuthentication.cs" />
     <Compile Include="ProjectBaseConfiguration.cs" />
     <Compile Include="ProjectPageBase.cs" />
     <Compile Include="ProjectTestBase.cs" />

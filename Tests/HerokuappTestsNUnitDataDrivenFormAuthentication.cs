@@ -4,15 +4,14 @@
 using NUnit.Framework;
 using Ocaramba.UITests.DataDriven;
 using Ocaramba.UITests.DataDriven.PageObjects;
-using Ocaramba.UITests1.DataDriven;
-using Ocaramba.UITests1.PageObjects;
+using Ocaramba.UITests.PageObjects;
 using System.Collections.Generic;
 
 namespace Ocaramba.UITests1.Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
-    public class HerokuappTestsNUnitDataDriven : ProjectTestBase
+    public class HerokuappTestsNUnitDataDrivenFormAuthentication : ProjectTestBase
     {
         [Test]
         [TestCaseSource(typeof(TestData), "Credentials")]

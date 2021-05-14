@@ -7,7 +7,7 @@ using Ocaramba.Types;
 using Ocaramba.UITests.DataDriven;
 using OpenQA.Selenium;
 
-namespace Ocaramba.UITests1.PageObjects
+namespace Ocaramba.UITests.PageObjects
 {
     public class FormAuthenticationPage : ProjectPageBase
     {
