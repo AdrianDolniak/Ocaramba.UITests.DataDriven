@@ -13,7 +13,7 @@ namespace Ocaramba.UITests.DataDriven.Tests
     {
         [Test]
         [TestCaseSource(typeof(TestData), "CredentialsBasicAuthCSV")]
-        public void BasicAuthPageTestXml(IDictionary<string, string> parameters)
+        public void BasicAuthPageTestCSV(IDictionary<string, string> parameters)
         {
             var basicAuthPage = new InternetPage(this.DriverContext);
             basicAuthPage.OpenHomePage();
